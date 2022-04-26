@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="js/main.js">
+    <link rel="stylesheet" href="css/collections.css">
+    <script src="js/main.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha512-HaoDYc3PGduguBWOSToNc0AWGHBi2Y432Ssp3wNIdlOzrunCtB2qq6FrhtPbo+PlbvRbyi86dr5VQx61eg/daQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
@@ -25,35 +26,35 @@
             </div>
             <div class="header-navbar-menu">
                 <div class="header-menu-links">
-                    <a href="index.html" class="navbar-menu-link _active">Главная</a>
-                    <a href="index.html" class="navbar-menu-link">О проекте</a>
-                    <a href="index.html" class="navbar-menu-link">Коллекция</a>
+                    <a href="index.html" class="navbar-menu-link _active transition">Главная</a>
+                    <a href="about.html" class="navbar-menu-link transition">О проекте</a>
+                    <a href="collections.html" class="navbar-menu-link transition">Коллекция</a>
                 </div>
             </div>
         </div>
     </header>
     <main class="main">
         <div class="main-bg"></div>
-        <div class="main-text">В данной виртуальной выставке <br> представлены иллюстрации <br> археологических сенсаций <br> Енисейской Сибири</div>
+        <div class="main-text _anim-items _anim-no-hide">В данной виртуальной выставке <br> представлены иллюстрации <br> археологических сенсаций <br> Енисейской Сибири</div>
     </main>
     <article class="hero-navigation container">
         <div class="col">
-            <div class="hero-about">
-                <h1 class="hero-title">О проекте</h1>
-                <p class="hero-subtitle">Цель данного проекта заключается в повышении уровня осведомленности пользователей с археологическими находками Енисейской Сибири. </p>
-                <div class="details-wrapper">
-                    <a href="#" class="hero-details">Подробнее о проекте</a>
-                    <a href="#" class="arrow-1">
+            <div class="hero-about ">
+                <h1 class="hero-title _anim-items _anim-no-hide">О проекте</h1>
+                <p class="hero-subtitle _anim-items _anim-no-hide">Цель данного проекта заключается в повышении уровня осведомленности пользователей с археологическими находками Енисейской Сибири. </p>
+                <div class="details-wrapper _anim-items _anim-no-hide">
+                    <a href="about.html" class="hero-details">Подробнее о проекте</a>
+                    <a href="about.html" class="arrow-1">
                         <div></div>
                     </a>
                 </div>
             </div>
-            <div class="hero-collection">
-                <h1 class="hero-title">Коллекция</h1>
-                <p class="hero-subtitle">Здесь собраны такие памятники, как Ишимский клад, могильник Оглахты, Часовенная гора, пещера Еленева, курган Аржан, Афонтова гора, Косогольский клад, Новопятницкий клад, Большой Салбыкский курган, Боярская писаница, Каменные изваяния Окуневской культуры и Ташебинский дворец.</p>
-                <div class="details-wrapper">
-                    <a href="#" class="hero-details">Перейти в коллекцию</a>
-                    <a href="#" class="arrow-1">
+            <div class="hero-collection ">
+                <h1 class="hero-title _anim-items _anim-no-hide">Коллекция</h1>
+                <p class="hero-subtitle _anim-items _anim-no-hide">Здесь собраны такие памятники, как Ишимский клад, могильник Оглахты, Часовенная гора, пещера Еленева, курган Аржан, Афонтова гора, Косогольский клад, Новопятницкий клад, Большой Салбыкский курган, Боярская писаница, Каменные изваяния Окуневской культуры и Ташебинский дворец.</p>
+                <div class="details-wrapper _anim-items _anim-no-hide">
+                    <a href="collections.html" class="hero-details">Перейти в коллекцию</a>
+                    <a href="collections.html" class="arrow-1 ">
                         <div></div>
                     </a>
                 </div>
@@ -62,16 +63,16 @@
         <div class="col">
             <div class="hero-images-group">
                 <div class="img-about">
-                    <img src="img/hero-images/image 1.png" alt="">
-                    <img src="img/hero-images/image 2.png" alt="">
+                    <img src="img/main/1.png" width="209" alt="">
+                    <img src="img/main/2.png" width="438" alt="">
                 </div>
                 <div class="img-collection">
                     <div class="img-col">
-                        <img src="img/hero-images/image 3.png" alt="">
-                        <img src="img/hero-images/image 4.png" alt="">
+                        <img src="img/main/3.png" width="438" height="172" alt="">
+                        <img src="img/main/4.png" alt="">
                     </div>
                     <div class="img-col">
-                        <img src="img/hero-images/image 5.png" alt="">
+                        <img src="img/main/5.png" height="365" width="209" alt="">
                     </div>
                 </div>
             </div>
@@ -91,15 +92,16 @@
                      <a href="index.html" class="footer-nav-link">Главная</a>
                    </div>
                    <div class="footer-menu">
-                     <a href="index.html" class="footer-nav-link">О проекте</a>
+                     <a href="about.html" class="footer-nav-link">О проекте</a>
                    </div>
                     <div class="footer-menu">
-                     <a href="index.html" class="footer-nav-link">Коллекция</a>
+                     <a href="collections.html" class="footer-nav-link">Коллекция</a>
                   </div>
                </div>
                <div class="footer-contacts">E-mail: sudilovskaya890@gmail.com</div>
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </body>
 </html>

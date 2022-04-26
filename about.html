@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="js/main.js">
+    <link rel="stylesheet" href="css/collections.css">
+    <script src="js/main.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha512-HaoDYc3PGduguBWOSToNc0AWGHBi2Y432Ssp3wNIdlOzrunCtB2qq6FrhtPbo+PlbvRbyi86dr5VQx61eg/daQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
@@ -25,21 +26,21 @@
             </div>
             <div class="header-navbar-menu">
                 <div class="header-menu-links">
-                    <a href="index.html" class="navbar-menu-link ">Главная</a>
-                    <a href="about.html" class="navbar-menu-link _active">О проекте</a>
-                    <a href="index.html" class="navbar-menu-link">Коллекция</a>
+                    <a href="index.html" class="navbar-menu-link transition ">Главная</a>
+                    <a href="about.html" class="navbar-menu-link _active transition">О проекте</a>
+                    <a href="collections.html" class="navbar-menu-link transition">Коллекция</a>
                 </div>
             </div>
         </div>
     </header>
     <main class="about__main container">
         <div class="about__main-col">
-            <p class="about__main-text"> В данной виртуальной выставке представлены иллюстрации археологических сенсаций Енисейской Сибири. Здесь собраны такие памятники, как Ишимский клад, могильник Оглахты, Часовенная гора, пещера Еленева, курган Аржан, Афонтова гора, Косогольский клад, Новопятницкий клад, Большой Салбыкский курган, Боярская писаница, Каменные изваяния окуневской культуры и Ташебинский дворец.</p>
-            <div class="details-text">
-                <p class="hero-details about">Перейти в раздел</p>
-                    <div class="details-wrapper about">
-                     <p class="hero-details about"> памятники </p>
-                <a href="#" class="arrow-1 about"> 
+            <p class="about__main-text _anim-items _anim-no-hide"> В данной виртуальной выставке представлены иллюстрации археологических сенсаций Енисейской Сибири. Здесь собраны такие памятники, как Ишимский клад, могильник Оглахты, Часовенная гора, пещера Еленева, курган Аржан, Афонтова гора, Косогольский клад, Новопятницкий клад, Большой Салбыкский курган, Боярская писаница, Каменные изваяния окуневской культуры и Ташебинский дворец.</p>
+            <div class="details-text _anim-items _anim-no-hide">
+                <a href="collections.html" class="hero-details about">Перейти в раздел</a>
+                    <div class="details-group">
+                     <a href="collections.html" class="hero-details about"> памятники </a>
+                <a href="collections.html" class="arrow-1 about"> 
                     <div></div>
                 </a>
             </div>
@@ -48,22 +49,22 @@
         <div class="about__main-col">
             <div class="about__images-group">
                 <div class="about__img-col">
-                    <img src="img/about-images/1.png" alt="">
+                    <img src="img/collection/isvayania/5.png" width="439" height="763"   alt="">
                 </div>
                 <div class="about__img-col">
-                    <img src="img/about-images/2.png" alt="">
-                    <img src="img/about-images/3.png" alt="">
-                    <img src="img/about-images/4.png" alt="">
+                    <img src="img/collection/isvayania/1.png" width="438" height="241" alt="">
+                    <img src="img/collection/isvayania/4.png" width="438" height="241" alt="">
+                    <img src="img/collection/afontova/unnamed (5).png" width="438" height="241"alt="">
                 </div>
             </div>
         </div>
     </main>
     <section class="about__section container">
-        <div class="about-authors">
+        <div class="about-authors _anim-items _anim-no-hide">
             Макаров Николай Поликарпович — доцент, кандидат исторических наук, СФУ <br> <br> Судиловская Анастасия Ивановна — веб-разработчица, студентка СФУ
         </div>
-        <div class="about__section-text">
-            <div class="section-text-wrapper">
+        <div class="about__section-text _anim-items _anim-no-hide">
+            <div class="section-text-wrapper ">
            <span>Цель данного проекта </span>  заключается в повышении уровня осведомленности пользователей с археологическими находками Енисейской Сибири. При реализации виртуальной выставки это будет доступно каждому человеку, имеющему доступ в Интернет. Цифровой формат выставки очень удобен - ведь для того, чтобы ознакомиться с памятниками и экспонатами больше не нужно идти в музей, достаточно зайти на сайт с компьютера или телефона. Сайт выполнен в минималистичном стиле, фокусируя внимание пользователя на контенте, тем самым максимизируя эффективность взаимодействия с ним. Данная выставка будет интересна студентам, археологам и людям, интересующимся археологией.
             </div>
         </div>
@@ -83,15 +84,16 @@
                      <a href="index.html" class="footer-nav-link">Главная</a>
                    </div>
                    <div class="footer-menu">
-                     <a href="index.html" class="footer-nav-link">О проекте</a>
+                     <a href="about.html" class="footer-nav-link">О проекте</a>
                    </div>
                     <div class="footer-menu">
-                     <a href="index.html" class="footer-nav-link">Коллекция</a>
+                     <a href="collections.html" class="footer-nav-link">Коллекция</a>
                   </div>
                </div>
                <div class="footer-contacts">E-mail: sudilovskaya890@gmail.com</div>
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </body>
 </html>

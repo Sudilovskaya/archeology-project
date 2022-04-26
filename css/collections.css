@@ -1,0 +1,82 @@
+.collection-alphabet {
+    max-width: 100%;
+    font-family: 'Dela Gothic One';
+    font-size: 24px;
+    line-height: 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1%;
+    margin-top: 7%;
+    text-decoration: none;
+    transform: translateY(130%);
+    transition: all .8s ease;
+}
+.collection-alphabet._active{
+    transform: translateY(0);
+}
+.collection-alphabet a{
+    text-decoration: none;
+    color: #000000;
+}
+.collection-alphabet span:hover{
+    color: #89AEAF;
+    cursor: pointer;
+    display: block;
+}
+.collection-alphabet span._active{
+    color: #89AEAF;
+}
+.collection-monuments {
+    max-width: 100%;
+    margin-top: 3%;
+    margin-bottom: 10%;
+    transform: translateY(100%);
+    transition: all .8s ease;
+}
+.collection-monuments._active{
+    transform: translateY(0);
+}
+.collection-monuments span{
+    font-family: 'Dela Gothic One';
+    font-size: 18px;
+    line-height: 26px;
+    margin-right: 2%;
+}
+.collection {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.collection-wrapper {
+    margin-bottom: 15%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.collection-image-group img{
+    width: 400px;
+    margin-bottom: 1%;
+}
+.collection-title {
+    font-family: 'Dela Gothic One';
+    font-size: 24px;
+    line-height: 35px;
+    margin-top: 3%;
+}
+.collection-description {
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 1%;
+}
+.swiper-pagination-bullet-active{
+    background: #000000 !important;
+}
+.swiper-slide{
+    user-select: none;
+}
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-wrapper{
+    padding-bottom: 30px;
+}

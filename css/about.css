@@ -11,15 +11,26 @@
     font-size: 24px;
     line-height: 25px;
     max-width: 90%;
+    transform: translateY(50%);
+    transition: all .8s ease;
+}
+.about__main-text._active{
+    transform: translateY(0);
 }
 .details-text{
     display: flex;
     flex-wrap: wrap;
     max-width: 70%;
     gap:5px;
+    transform: translateY(150%);
+    transition: all .8s ease;
 }
-.details-wrapper.about{
+.details-text._active{
+    transform: translateY(0);
+}
+.details-group{
     margin-top: 0 ;
+    display: flex;
 }
 .hero-details.about {
     line-height: 25px;
@@ -59,12 +70,22 @@
     padding-right: 7%;
     line-height: 35px;
     padding-top: 5%;
+    transform: translateX(-100%);
+    transition: all 1s ease;
+}
+.about-authors._active{
+    transform: translateX(0);
 }
 .about__section-text {
     flex-basis: 58%;
     margin-left: 7%;
     padding-top: 5%;
     padding-bottom: 5%;
+    transform: translateX(100%);
+    transition: all 1s ease;
+}
+.about__section-text._active{
+    transform: translateX(0);
 }
 .section-text-wrapper{
     font-size: 24px;
