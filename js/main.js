@@ -61,19 +61,48 @@ if  (animItems.length > 0) {
     window.addEventListener('scroll', animOnScroll)
 }
 
-//плавное переключение между страницами
-// $(document).ready(function() {
-//   $("body").css("display", "none");
+//кнопка наверх
+function backToTop () {
+  let topButton = $('.top-button')
 
-//   $("body").fadeIn(1000);
+  $(window).on('scroll', () => {
+      if($(this).scrollTop() >= 50){
+        topButton.fadeIn()
+      } else {
+        topButton.fadeOut()
+      }
+      })
+      topButton.on('click', (event) =>{
+        event.preventDefault()
+        $('html').animate({scrollTop:0}, 1000)
+      })
+}
 
-// $("a.transition").click(function(event){
-//   event.preventDefault();
-//   linkLocation = this.href;
-//   $("body").fadeOut(1000, redirectPage);
-// });
+backToTop()
 
-// function redirectPage() {
-//   window.location = linkLocation;
-// }
-// });
+// мобильное меню
+const burgerBtn = document.querySelector('.burger-menu')
+const mobileMenu = document.querySelector('.mobile-menu')
+
+burgerBtn.addEventListener('click', () => {
+    document.body.classList.toggle('_lock')
+    mobileMenu.classList.toggle('_active')
+    burgerBtn.classList.toggle('_active')
+})
+
+//выпадающий список
+
+const listArrow = document.querySelector('.list-button')
+const listBtn = document.querySelector('.menu-button')
+const subMenu = document.querySelector('.sub-menu')
+
+listBtn.addEventListener('click', () => {
+    subMenu.classList.toggle('open')
+    listArrow .classList.toggle('rotate')
+
+      if(subMenu.classList.contains('open')){
+        subMenu.style.height = ''
+      } else {
+        subMenu.style.height = subMenu.scrollHeight + 'px'
+      }
+})
