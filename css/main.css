@@ -28,6 +28,7 @@ body{
 .container{
     max-width: 93%;
     margin: auto;
+    overflow-x: hidden;
 }
 .header-navbar {
     display: flex;
@@ -428,10 +429,11 @@ body{
       .footer-contacts{
           text-align: right;
           align-items: center;
-          margin-top: 5vw;
       }
       .footer-menu{
           text-align: right;
       }
-      
+      .footer-wrapper{
+          max-width: 93%;
+      }
 }
