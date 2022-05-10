@@ -5,11 +5,16 @@
 }
 .about__main-col:nth-child(1){
     flex-basis: 35%;
-    padding-top: 5%;
+    padding-top: 3%;
+}
+.about__main-title{
+    font-family: 'Dela Gothic One';
+    font-size: 24px;
+    margin-bottom: 15%;
 }
 .about__main-text{
     font-size: 24px;
-    line-height: 25px;
+    line-height: 35px;
     max-width: 90%;
     transform: translateY(50%);
     transition: all .8s ease;
@@ -125,5 +130,8 @@
     .about__section-text{
         margin: 0;
         padding-bottom: 10%;
+    }
+    .about__main-title{
+        margin-bottom: 5%;
     }
 }
