@@ -435,5 +435,6 @@ body{
       }
       .footer-wrapper{
           max-width: 93%;
+          padding-bottom: 5%;
       }
 }
