@@ -28,7 +28,6 @@ body{
 .container{
     max-width: 93%;
     margin: auto;
-    overflow-x: hidden;
 }
 .header-navbar {
     display: flex;
@@ -278,6 +277,9 @@ body{
     display: none;
 }
 @media screen and (max-width:768px){
+    .container{
+        overflow-x: hidden;
+    }
     .header-navbar-menu{
         display: none;
     }
