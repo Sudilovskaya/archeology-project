@@ -90,6 +90,7 @@ body{
     width: 100vw;
     height: 58.5vw;
     opacity: .8;
+    overflow-x: hidden;
 }
 .main-text {
     font-family: 'Dela Gothic One';
@@ -98,7 +99,7 @@ body{
     line-height: 1.8rem;
     margin-left: auto;
     position: absolute;
-    right: 2vw;
+    right: 5vw;
     text-align: right;
     bottom: 35%;
     transform: translateY(90%);
@@ -277,9 +278,6 @@ body{
     display: none;
 }
 @media screen and (max-width:768px){
-    .container{
-        overflow-x: hidden;
-    }
     .header-navbar-menu{
         display: none;
     }
